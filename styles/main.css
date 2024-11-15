@@ -1,131 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: "Arial", sans-serif;
-  color: #333;
-}
-
-p {
-  font-family: "Arial", sans-serif;
-  color: #666;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f4f4f4;
-}
-.header__title {
-  margin: 0;
-}
-.header__nav {
-  display: flex;
-}
-.header__nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #333;
-}
-.header__button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.footer {
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-.footer__social-links {
-  margin-top: 10px;
-}
-.footer__social-links a {
-  margin-right: 10px;
-  color: #fff;
-}
-.footer__info {
-  margin-top: 20px;
-}
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.services .services__item {
-  text-align: center;
-  margin-bottom: 20px;
-  width: 30%;
-  min-width: 250px;
-}
-.services .services__item img {
+/* Estilos para imágenes de la sección de servicios */
+.servicios__item-img {
   width: 100%;
+  max-width: 300px; /* Tamaño máximo ajustable */
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  object-fit: cover; /* Mantiene la proporción */
 }
 
-.testimonials {
+/* Estilos para imágenes de testimonios */
+.testimonios__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Mantiene la proporción */
+}
+
+/* Flexbox para la lista de servicios */
+.servicios__list {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centra los elementos */
+}
+
+/* Ajustes generales */
+.header__container, .footer__info, .footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-.testimonials .testimonials__quote {
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 5px;
-  width: 30%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.testimonials .testimonials__quote img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-@media (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-  .services__item {
-    width: 45%;
-  }
-  .testimonials__quote {
-    width: 45%;
-  }
-}
-@media (max-width: 768px) {
-  .header__nav {
-    flex-direction: column;
-  }
-  .services__item {
-    width: 100%;
-  }
-  .testimonials__quote {
-    width: 45%;
-  }
-}/*# sourceMappingURL=main.css.map */

@@ -1,29 +1,20 @@
 @media (max-width: 1024px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .services__item {
-      width: 45%;
-    }
-  
+    .services__item,
     .testimonials__quote {
       width: 45%;
     }
   }
   
   @media (max-width: 768px) {
-    .header__nav {
-      flex-direction: column;
-    }
-  
-    .services__item {
-      width: 100%;
-    }
-  
+    .services__item,
     .testimonials__quote {
-      width: 45%;
+      width: 100%;
+      margin-bottom: 15px;
+  
+      img {
+        max-width: 100%; /* Asegura que las imágenes no excedan su contenedor */
+      }
     }
   }
+
   

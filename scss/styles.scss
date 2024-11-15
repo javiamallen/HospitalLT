@@ -1,0 +1,152 @@
+/* ------------------------------------------
+   Variables
+------------------------------------------ */
+
+$primary-color: #007bff;
+$secondary-color: #f4f4f4;
+$footer-bg: #333;
+$text-color: #333;
+$white: #fff;
+$border-radius: 10px;
+$margin-bottom: 20px;
+$padding: 20px;
+$max-width: 100%;
+
+/* ------------------------------------------
+   Encabezado (Header)
+------------------------------------------ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: $secondary-color;
+  
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* ------------------------------------------
+   Sección de Bienvenida
+------------------------------------------ */
+
+#inicio {
+  padding: $padding;
+  text-align: center;
+}
+
+/* ------------------------------------------
+   Sección de Servicios
+------------------------------------------ */
+
+#servicios {
+  padding: $padding;
+  background-color: $secondary-color;
+  
+  h2 {
+    text-align: center;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    .service {
+      text-align: center;
+      margin-bottom: $margin-bottom;
+      width: 30%;
+      min-width: 250px;
+
+      img {
+        width: $max-width;
+        height: auto;
+        border-radius: $border-radius;
+      }
+
+      h3 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------
+   Sección de Testimonios
+------------------------------------------ */
+
+#testimonios {
+  padding: $padding;
+
+  .testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    blockquote {
+      background-color: $secondary-color;
+      padding: 10px;
+      border-radius: 5px;
+      width: 30%;
+      text-align: center;
+      margin-bottom: $margin-bottom;
+
+      img {
+        max-width: $max-width;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------
+   Pie de Página (Footer)
+------------------------------------------ */
+
+footer {
+  padding: $padding;
+  background-color: $footer-bg;
+  color: $white;
+  text-align: center;
+
+  div {
+    p {
+      margin: 0;
+    }
+  }
+
+  .social-links {
+    margin-top: 10px;
+
+    a {
+      margin-right: 10px;
+      color: $white;
+    }
+  }
+
+  p:last-child {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Hospital Little Tree</title>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f4f4f4;">
+      <h1 style="margin: 0;">Hospital Little Tree</h1>
+      <nav>
+        <a href="index.html" style="margin-right: 15px; text-decoration: none;">Inicio</a>
+        <a href="servicios.html" style="margin-right: 15px; text-decoration: none;">Servicios</a>
+        <a href="#contacto" style="text-decoration: none;">Contacto</a>
+      </nav>
+      <button style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Reservar Cita</button>
+    </div>
+  </header>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" style="padding: 20px; text-align: center;">
+    <h2>Contacto</h2>
+    <p>Estamos aquí para ayudarte. Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros.</p>
+
+    <!-- Formulario de Contacto -->
+    <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+      <div style="margin-bottom: 10px;">
+        <label for="nombre" style="display: block;">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="email" style="display: block;">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="mensaje" style="display: block;">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Enviar</button>
+      </div>
+    </form>
+
+    <!-- Información de Contacto Adicional -->
+    <div style="margin-top: 40px;">
+      <h3>Información de Contacto</h3>
+      <p><strong>Dirección:</strong> Santiago de Chile</p>
+      <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+      <p><strong>Email:</strong> info@littletreehospital.cl</p>
+    </div>
+
+    <!-- Mapa de Ubicación -->
+    <div style="margin-top: 40px;">
+      <h3>Mapa de Ubicación</h3>
+      <p>Encuentra nuestra ubicación en el siguiente mapa:</p>
+      <img src="https://maps.googleapis.com/maps/api/staticmap?center=Santiago+de+Chile&zoom=13&size=600x400&markers=color:red%7Clabel:H%7C-33.4489,-70.6693&key=TU_API_KEY" alt="Mapa del Hospital Little Tree" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+      <p><em>La ubicación mostrada es solo un ejemplo. Sustituye 'TU_API_KEY' por tu clave de Google Maps API.</em></p>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer style="padding: 20px; background-color: #333; color: #fff; text-align: center;">
+    <div>
+      <p><strong>Hospital Little Tree</strong></p>
+      <p>Ubicado en Santiago de Chile</p>
+      <p>Teléfono: +56 9 1234 5678</p>
+      <p>Email: info@littletreehospital.cl</p>
+    </div>
+    <div style="margin-top: 10px;">
+      <p>Redes Sociales:</p>
+      <a href="#" style="margin-right: 10px; color: #fff;">Facebook</a>
+      <a href="#" style="margin-right: 10px; color: #fff;">Instagram</a>
+      <a href="#" style="color: #fff;">WhatsApp</a>
+    </div>
+    <p style="margin-top: 20px;">© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

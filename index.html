@@ -4,87 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hospital Little Tree</title>
-  <!-- Enlace al archivo CSS generado a partir de SASS -->
-  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
   <!-- Encabezado -->
   <header class="header">
-    <h1>Hospital Little Tree</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="EquipoMedico.html">Equipo Médico</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <button>Reservar Cita</button>
+    <div class="header__container">
+      <h1 class="header__title">Hospital Little Tree</h1>
+      <nav class="header__nav">
+        <a href="#inicio" class="header__nav-link">Inicio</a>
+        <a href="EquipoMedico.html" class="header__nav-link">Equipo Médico</a>
+        <a href="contacto.html" class="header__nav-link">Contacto</a>
+      </nav>
+      <button class="header__button">Reservar Cita</button>
+    </div>
   </header>
 
   <!-- Sección de Bienvenida -->
-  <section id="inicio">
-    <h2>Bienvenidos al Hospital Little Tree</h2>
-    <p>Nuestra misión es brindar atención médica de calidad a todos los niños, apoyando su bienestar físico, emocional y social.</p>
-    <p>En Little Tree, creemos que cada niño merece crecer sano, feliz y rodeado de amor y cuidado.</p>
+  <section id="inicio" class="section section--inicio">
+    <h2 class="section__title">Bienvenidos al Hospital Little Tree</h2>
+    <p class="section__text">Nuestra misión es brindar atención médica de calidad a todos los niños, apoyando su bienestar físico, emocional y social.</p>
+    <p class="section__text">En Little Tree, creemos que cada niño merece crecer sano, feliz y rodeado de amor y cuidado.</p>
   </section>
 
   <!-- Sección de Servicios -->
-  <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="services-container">
-      <div class="service">
-        <img src="images/dentista.jpg" alt="Consultas">
-        <h3>Consultas</h3>
-        <p>Atención personalizada con especialistas en pediatría.</p>
+  <section id="servicios" class="section section--servicios">
+    <h2 class="section__title">Nuestros Servicios</h2>
+    <div class="servicios__list">
+      <div class="servicios__item">
+        <img src="images/dentista.jpg" alt="Consultas" class="servicios__item-img">
+        <h3 class="servicios__item-title">Consultas</h3>
+        <p class="servicios__item-text">Atención personalizada con especialistas en pediatría.</p>
       </div>
-      <div class="service">
-        <img src="images/pediatra.jpg" alt="Urgencias">
-        <h3>Urgencias</h3>
-        <p>Servicio de urgencias 24/7 para emergencias pediátricas.</p>
+      <div class="servicios__item">
+        <img src="images/pediatra.jpg" alt="Urgencias" class="servicios__item-img">
+        <h3 class="servicios__item-title">Urgencias</h3>
+        <p class="servicios__item-text">Servicio de urgencias 24/7 para emergencias pediátricas.</p>
       </div>
-      <div class="service">
-        <img src="images/terapia.jpg" alt="Especialidades">
-        <h3>Especialidades</h3>
-        <p>Tratamientos avanzados con médicos especializados.</p>
+      <div class="servicios__item">
+        <img src="images/terapia.jpg" alt="Especialidades" class="servicios__item-img">
+        <h3 class="servicios__item-title">Especialidades</h3>
+        <p class="servicios__item-text">Tratamientos avanzados con médicos especializados.</p>
       </div>
     </div>
   </section>
 
   <!-- Sección de Testimonios -->
-  <section id="testimonios">
-    <h2>Testimonios de Pacientes</h2>
-    <div class="testimonials-container">
-      <blockquote>
-        <p>"Gran equipo y buenísima atención."</p>
-        <img src="images/pediatra.jpg" alt="Testimonio1">
-        <footer>- Familia de Camila</footer>
+  <section id="testimonios" class="section section--testimonios">
+    <h2 class="section__title">Testimonios de Pacientes</h2>
+    <div class="testimonios__list">
+      <blockquote class="testimonios__item">
+        <p class="testimonios__text">"Gran equipo y buenísima atención."</p>
+        <img src="images/pediatra.jpg" alt="Testimonio1" class="testimonios__img">
+        <footer class="testimonios__footer">- Familia de Camila</footer>
       </blockquote>
-      <blockquote>
-        <p>"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
-        <img src="images/pediatra.jpg" alt="Testimonio2">
-        <footer>- Familia de Sofía</footer>
+      <blockquote class="testimonios__item">
+        <p class="testimonios__text">"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
+        <img src="images/pediatra.jpg" alt="Testimonio2" class="testimonios__img">
+        <footer class="testimonios__footer">- Familia de Sofía</footer>
       </blockquote>
-      <blockquote>
-        <p>"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
-        <img src="images/pediatra.jpg" alt="Testimonio3">
-        <footer>- Familia de Leonardo</footer>
+      <blockquote class="testimonios__item">
+        <p class="testimonios__text">"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
+        <img src="images/pediatra.jpg" alt="Testimonio3" class="testimonios__img">
+        <footer class="testimonios__footer">- Familia de Leonardo</footer>
       </blockquote>
     </div>
   </section>
 
   <!-- Pie de página -->
-  <footer>
-    <div>
-      <p><strong>Hospital Little Tree</strong></p>
-      <p>Ubicado en Santiago de Chile</p>
-      <p>Teléfono: +56 9 1234 5678</p>
-      <p>Email: info@littletreehospital.cl</p>
+  <footer class="footer">
+    <div class="footer__info">
+      <p class="footer__title"><strong>Hospital Little Tree</strong></p>
+      <p class="footer__location">Ubicado en Santiago de Chile</p>
+      <p class="footer__contact">Teléfono: +56 9 1234 5678</p>
+      <p class="footer__contact">Email: info@littletreehospital.cl</p>
     </div>
-    <div class="social-links">
-      <p>Redes Sociales:</p>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
+    <div class="footer__social">
+      <p class="footer__social-title">Redes Sociales:</p>
+      <a href="#" class="footer__social-link">Facebook</a>
+      <a href="#" class="footer__social-link">Instagram</a>
+      <a href="#" class="footer__social-link">WhatsApp</a>
     </div>
-    <p>© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
+    <p class="footer__copyright">© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>

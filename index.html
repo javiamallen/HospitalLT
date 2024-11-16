@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hospital Little Tree</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- Vincular Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ+P8R2juj9L1m8yQ/d5O3gAbpG1K58EJg5zHJ9cf2D6ePB2F9Zy9LwC8GJb" crossorigin="anonymous">
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="header bg-primary text-white py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="header__title m-0">Hospital Little Tree</h1>
-      <nav class="header__nav">
-        <a href="#inicio" class="header__nav-link text-white text-decoration-none mx-2">Inicio</a>
-        <a href="EquipoMedico.html" class="header__nav-link text-white text-decoration-none mx-2">Equipo Médico</a>
-        <a href="contacto.html" class="header__nav-link text-white text-decoration-none mx-2">Contacto</a>
+  <!-- Encabezado -->
+  <header class="bg-light p-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>Hospital Little Tree</h1>
+      <nav>
+        <a href="#inicio" class="text-dark me-3 text-decoration-none">Inicio</a>
+        <a href="equipomedico.html" class="text-dark me-3 text-decoration-none">Equipo Médico</a>
+        <a href="contacto.html" class="text-dark text-decoration-none">Contacto</a>
       </nav>
-      <button class="btn btn-light header__button">Reservar Cita</button>
+      <button class="btn btn-primary">Reservar Cita</button>
     </div>
   </header>
 
-  <!-- Welcome Section -->
-  <section id="inicio" class="section section--inicio py-5">
-    <div class="container text-center">
-      <h2 class="section__title mb-4">Bienvenidos al Hospital Little Tree</h2>
-      <p class="section__text">Nuestra misión es brindar atención médica de calidad a todos los niños, apoyando su bienestar físico, emocional y social.</p>
-      <p class="section__text">En Little Tree, creemos que cada niño merece crecer sano, feliz y rodeado de amor y cuidado.</p>
-    </div>
+  <!-- Sección de Bienvenida -->
+  <section id="inicio" class="text-center py-5">
+    <h2>Bienvenidos al Hospital Little Tree</h2>
+    <p>Nuestra misión es brindar atención médica de calidad a todos los niños, apoyando su bienestar físico, emocional y social.</p>
+    <p>En Little Tree, creemos que cada niño merece crecer sano, feliz y rodeado de amor y cuidado.</p>
   </section>
 
-  <!-- Services Section -->
-  <section id="servicios" class="section section--servicios py-5 bg-light">
-    <div class="container">
-      <h2 class="section__title text-center mb-4">Nuestros Servicios</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card servicios__item">
-            <img src="images/dentista.jpg" class="card-img-top servicios__item-img" alt="Consultas">
-            <div class="card-body">
-              <h3 class="card-title servicios__item-title">Consultas</h3>
-              <p class="card-text servicios__item-text">Atención personalizada con especialistas en pediatría.</p>
-            </div>
-          </div>
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="bg-light py-5">
+    <h2 class="text-center">Nuestros Servicios</h2>
+    <div class="d-flex justify-content-around flex-wrap">
+      <div class="card" style="width: 18rem;">
+        <img src="images/dentista.jpg" class="card-img-top" alt="Consultas">
+        <div class="card-body">
+          <h5 class="card-title">Consultas</h5>
+          <p class="card-text">Atención personalizada con especialistas en pediatría.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card servicios__item">
-            <img src="images/pediatra.jpg" class="card-img-top servicios__item-img" alt="Urgencias">
-            <div class="card-body">
-              <h3 class="card-title servicios__item-title">Urgencias</h3>
-              <p class="card-text servicios__item-text">Servicio de urgencias 24/7 para emergencias pediátricas.</p>
-            </div>
-          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/pediatra.jpg" class="card-img-top" alt="Urgencias">
+        <div class="card-body">
+          <h5 class="card-title">Urgencias</h5>
+          <p class="card-text">Servicio de urgencias 24/7 para emergencias pediátricas.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card servicios__item">
-            <img src="images/terapia.jpg" class="card-img-top servicios__item-img" alt="Especialidades">
-            <div class="card-body">
-              <h3 class="card-title servicios__item-title">Especialidades</h3>
-              <p class="card-text servicios__item-text">Tratamientos avanzados con médicos especializados.</p>
-            </div>
-          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/terapia.jpg" class="card-img-top" alt="Especialidades">
+        <div class="card-body">
+          <h5 class="card-title">Especialidades</h5>
+          <p class="card-text">Tratamientos avanzados con médicos especializados.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-primary text-white py-4">
-    <div class="container text-center">
-      <p class="footer__title mb-2"><strong>Hospital Little Tree</strong></p>
-      <p class="footer__location mb-2">Ubicado en Santiago de Chile</p>
-      <p class="footer__contact mb-2">Teléfono: +56 9 1234 5678</p>
-      <p class="footer__contact mb-2">Email: info@littletreehospital.cl</p>
-      <div class="footer__social mb-3">
-        <a href="#" class="footer__social-link text-white text-decoration-none mx-2">Facebook</a>
-        <a href="#" class="footer__social-link text-white text-decoration-none mx-2">Instagram</a>
-        <a href="#" class="footer__social-link text-white text-decoration-none mx-2">WhatsApp</a>
-      </div>
-      <p class="footer__copyright">© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
+  <!-- Sección de Testimonios -->
+  <section id="testimonios" class="py-5">
+    <h2 class="text-center">Testimonios de Pacientes</h2>
+    <div class="d-flex justify-content-around flex-wrap">
+      <blockquote class="blockquote text-center" style="width: 30%; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+        <p>"Gran equipo y buenísima atención."</p>
+        <footer>- Familia de Camila</footer>
+      </blockquote>
+      <blockquote class="blockquote text-center" style="width: 30%; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+        <p>"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
+        <footer>- Familia de Sofía</footer>
+      </blockquote>
+      <blockquote class="blockquote text-center" style="width: 30%; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+        <p>"Gran equipo y atención cálida; nos hicieron sentir seguros."</p>
+        <footer>- Familia de Leonardo</footer>
+      </blockquote>
     </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p><strong>Hospital Little Tree</strong></p>
+    <p>Ubicado en Santiago de Chile</p>
+    <p>Teléfono: +56 9 1234 5678</p>
+    <p>Email: info@littletreehospital.cl</p>
+    <p>Redes Sociales: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">WhatsApp</a></p>
+    <p>© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Vincular el script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0f5vCkFYvf7pH+6dWmXqG2hOgiql1n3d5HY2k0ZgLeF8hkl" crossorigin="anonymous"></script>
 </body>
+
 </html>

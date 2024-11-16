@@ -1,32 +1,18 @@
-/* Estilos para imágenes de la sección de servicios */
-.servicios__item-img {
-  width: 100%;
-  max-width: 300px; /* Tamaño máximo ajustable */
-  height: auto;
-  border-radius: 8px; /* Opcional: bordes redondeados */
-  object-fit: cover; /* Mantiene la proporción */
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 8 | @import '../../../node_modules/bootstrap/scss/bootstrap';
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles\vendors\_bootstrap.scss 8:9  @import
+ *   styles\main.scss 22:9               root stylesheet */
 
-/* Estilos para imágenes de testimonios */
-.testimonios__img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  object-fit: cover; /* Mantiene la proporción */
-}
-
-/* Flexbox para la lista de servicios */
-.servicios__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; /* Centra los elementos */
-}
-
-/* Ajustes generales */
-.header__container, .footer__info, .footer__social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @import '../../../node_modules/bootstrap/scss/bootstrap';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles\\vendors\\_bootstrap.scss 8:9  @import\a   styles\\main.scss 22:9               root stylesheet";
 }

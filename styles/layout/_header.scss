@@ -1,0 +1,28 @@
+.header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: $spacing-unit;
+  
+    &__container {
+      @include flex-center;
+      justify-content: space-between;
+    }
+  
+    &__title {
+      font-size: 1.5rem;
+    }
+  
+    &__nav {
+      display: flex;
+      gap: $spacing-unit / 2;
+  
+      &-link {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

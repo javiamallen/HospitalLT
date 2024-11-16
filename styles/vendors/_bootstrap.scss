@@ -1,0 +1,10 @@
+// Sobreescribe las variables predeterminadas de Bootstrap
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color
+);
+
+// Importa el archivo original de Bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+
